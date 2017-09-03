@@ -47,6 +47,7 @@ async function computePrice(computer) {
         console.log(`[${part}] ${prodName}: ${price} Euro`);
         sum = sum + price;
     });
+    console.log('-------------------------------------------');
     console.log(`Total Sum: ${sum} Euro`);
 }
 
