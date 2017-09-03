@@ -3,6 +3,11 @@ const fetch = require('node-fetch');
 
 const computer = require('./computer.json');
 
+function parsePrice(text) {
+    const re = /\d+,\d{2}/;
+    return re.exec(text);
+}
+
 
 async function getPrice(prodId) {
     const url = `https://m.alternate.de/mobile/details.xhtml?p=${prodId}`;
@@ -11,7 +16,8 @@ async function getPrice(prodId) {
     const $ = cheerio.load(html);
     const elem = $('.price');
     const priceText = elem.text();
-    return priceText;
+    const price = parsePrice(priceText);
+    return price[0];
 }
 
 
