@@ -12,13 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "eslint": "^4.8.0",
+    "eslint": "^4.12.1",
     "node-fetch": "^1.7.3"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
   }
