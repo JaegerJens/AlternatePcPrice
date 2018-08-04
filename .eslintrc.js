@@ -3,6 +3,7 @@ module.exports = {
     "rules": {
         "semi": ["error", "always"],
         "indent": ["error", 4],
-        "space-before-function-paren": ["error", "never"]
+        "space-before-function-paren": ["error", "never"],
+        "complexity": ["error", 8],
     }
 };
